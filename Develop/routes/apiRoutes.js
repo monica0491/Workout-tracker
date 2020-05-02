@@ -8,6 +8,7 @@ module.exports = function (app) {
     app.get("/api/workouts", function (req, res) {
         Workout.find()
             .then(data => {
+                console.log(data[data.length-1]);
                 res.json(data)
             })
             .catch(err => {
