@@ -17,7 +17,7 @@ app.use(express.static("public"));
 var bodyParser = require('body-parser');
 
 //db Mongo
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://monik_0491:Fermina04.@ds149742.mlab.com:49742/heroku_0zdllnt8";
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useFindAndModify: false
